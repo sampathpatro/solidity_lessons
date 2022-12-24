@@ -17,7 +17,7 @@ contract SimpleStorage {
     People[] public people;//Dynamic array: No size of array mentioned; Static array: People[3] public people;
 
 
-    function store(uint256 _favouriteNumber) public {
+    function store(uint256 _favouriteNumber) public virtual {
         favoriteNumber = _favouriteNumber;
         retrieve();
     }
